@@ -1,0 +1,7 @@
+.DS_Store
+CrowdsourcingGame-broker/tmp/
+CrowdsourcingGame-broker/bin/
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+
