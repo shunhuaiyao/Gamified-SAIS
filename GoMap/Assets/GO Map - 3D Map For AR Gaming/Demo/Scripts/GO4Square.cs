@@ -55,6 +55,11 @@ namespace GoMap {
 				if (PlayerPrefs.GetString ("taskID") != "" && PlayerPrefs.GetInt ("Gotcha") == 0) {
 					FinalTarget = initFinalTargetPosition ();
 					//FinalTarget.position.z = 25;
+
+					float tmp = FinalTarget.position.z;
+					FinalTarget.position.z = FinalTarget.position.y;
+					FinalTarget.position.y = tmp;
+
 					Puppy.GetComponent<SeekFood> ().FinalTarget = FinalTarget.position;
                     
 					StartCoroutine (delayTwoSeconds (3));
