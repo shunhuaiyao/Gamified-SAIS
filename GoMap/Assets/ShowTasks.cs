@@ -157,7 +157,7 @@ public class ShowTasks : MonoBehaviour {
 		SelectedTaskText.enabled = true;
 		SelectedTaskPanel.GetComponent<Image> ().enabled = true;
 		LoadPosition (null);
-        Puppy.GetComponent<startTracking>().enabled = true;
+        //Puppy.GetComponent<startTracking>().enabled = true;
         Puppy.GetComponent<SeekFood> ().enabled = true;
 		Puppy.GetComponent<SeekFood> ().backToAvatar = true;
         Puppy.GetComponent<SeekFood>().spotPosition = tasks[index].spotPosition;
